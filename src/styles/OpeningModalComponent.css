@@ -1,0 +1,145 @@
+.opening-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.opening-modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.opening-modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #f00;
+}
+
+.opening-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  width: 100%;
+}
+
+.modal-text h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.modal-text p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.name-input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.name-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.opening-modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.get-started-button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .opening-modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal-logo {
+    width: 60px;
+  }
+
+  .modal-text h2 {
+    font-size: 20px;
+  }
+
+  .modal-text p {
+    font-size: 14px;
+  }
+
+  .name-input {
+    padding: 10px;
+  }
+
+  .get-started-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

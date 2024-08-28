@@ -1,0 +1,15 @@
+.add-point-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 100px; /* Large size for the "+" sign */
+  color: #e70000; /* Color matching your previous button */
+  font-weight: bold;
+  line-height: 1;
+}
+.add-point-button:hover {
+  color: #1cb762; /* Change color on hover */
+}
